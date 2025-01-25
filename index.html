@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusConnect</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Orbitron:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-content">
+            <div class="logo">
+                <i class="fas fa-map-marker-alt logo-icon"></i>
+                CampusConnect
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#map">Map</a></li>
+                <li><a href="#faq">FAQs</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <img src="1.jpg" alt="Campus" class="hero-image">
+        <div class="hero-overlay"></div>
+    </section>
+
+    About Section
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="image-content">
+                    <img src="2.jpeg" alt="Campus Solutions" class="about-image">
+                </div>
+                <div class="text-content">
+                    <h2 class="section-title">ABOUT CAMPUS CONNECT:</h2>
+                    <div class="feature-box">
+                        <p>This project addresses two key student challenges:</p>
+                        <ul>
+                            <li><i class="fas fa-compass"></i> Campus navigation</li>
+                            <li><i class="fas fa-user-tie"></i> Accessing professor information</li>
+                        </ul>
+                        <p>Our solutions to resolve this issue include the following approaches:</p>
+                        <ul>
+                            <li><i class="fas fa-qrcode"></i> QR code-based web application for efficient navigation</li>
+                            <li><i class="fas fa-robot"></i> Chatbot for streamlined access to faculty information</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section id="map" class="map">
+        <div class="container">
+            <h2 class="section-title center">Campus Map</h2>
+            <div class="map-card enhanced">
+                <iframe href="https://www.mappedin.com/" title="Mappedin Map" name="Mappedin Map" allow="clipboard-write 'self' https://app.mappedin.com; web-share 'self' https://app.mappedin.com" scrolling="no" width="100%" height="650" frameborder="0" style="border:0" src="https://app.mappedin.com/map/677e61e22e651c000b639f3f?embedded=true"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2 class="section-title center">Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-card">
+                    <div class="card-icon"><i class="fas fa-map-marked-alt"></i></div>
+                    <h3>How do I use this Map?</h3>
+                    <p>You firstly enter the Destination of the place, then press the directions button and then enter the from location and the map guides you efficiently.</p>
+                </div>
+
+                <!-- <div class="faq-card">
+                    <div class="card-icon"><i class="fas fa-location-arrow"></i></div>
+                    <h3>Will this be able to look for my current location?</h3>
+                    <p>Unfortunately no, this won't be able to detect your current location.</p>
+                </div>
+
+                <div class="faq-card">
+                    <div class="card-icon"><i class="fas fa-clock"></i></div>
+                    <h3>How frequently is the professor's timetable updated?</h3>
+                    <p>The professor's timetable is updated weekly by the administration. Any changes will reflect on the chatbot as soon as the updates are provided.</p>
+                </div>
+
+                <div class="faq-card">
+                    <div class="card-icon"><i class="fas fa-user-check"></i></div>
+                    <h3>Do I need to be logged in?</h3>
+                    <p>No, you do not need to be logged in to use the map or the chatbot. They are open and accessible to all users.</p>
+                </div>
+
+                <div class="faq-card">
+                    <div class="card-icon"><i class="fas fa-robot"></i></div>
+                    <h3>Can I use the chatbot for non-professor-related inquiries?</h3>
+                    <p>The chatbot primarily focuses on professor-related inquiries. However, in the future, it might include features like event updates, campus news, and other student-related services.</p>
+                </div>
+
+                <div class="faq-card">
+                    <div class="card-icon"><i class="fas fa-wifi-slash"></i></div>
+                    <h3>Is there an offline version of the map?</h3>
+                    <p>Right now, the map is an online-only feature. However, we plan to introduce offline capabilities in future updates for ease of use without an internet connection.</p>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title center">Get in Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p>For further suggestions kindly reach out to...</p>
+                    <div class="contact-details">
+                        <a href="mailto:campusconnectisl@gmail.com" class="email-link">
+                            <i class="fas fa-envelope"></i>
+                            campusconnectisl@gmail.com
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-credit">
+            Designed and Developed by TEAM ALPHAS
+        </div>
+    </section>
+
+    Chatbot
+    <div id="chatbot" class="chatbot">
+        <div class="chat-header">
+            <div class="bot-icon">🤖</div>
+            <h2>CampusConnect Assistant</h2>
+            <button class="minimize-btn" onclick="toggleChat()">
+                <i class="fas fa-minus"></i>
+            </button>
+        </div>
+        <div class="messages-container" id="chatContainer">
+            <div class="bot-message">Welcome to CampusConnect Assistant! I can help you find your teachers by providing their contact number, room number, specialization, subjects they teach, and their availability based on their timetable. Feel free to ask for any teacher's details, and I'll assist you in locating them.
+                <span class="message-time">Just now</span>
+            </div>
+            <div class="typing-indicator" id="typingIndicator">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="input-container">
+            <input type="text" id="userInput" placeholder="Type your message..." onkeypress="handleKeyPress(event)">
+            <button onclick="sendMessage()">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+
+    Chatbot Toggle Button -->
+    <!-- <button id="chatbot-button" class="chatbot-button" onclick="toggleChat()">
+        <i class="fas fa-comments"></i>
+    </button> -->
+
+    <script src="script.js"></script>s
+</body>
+</html>
